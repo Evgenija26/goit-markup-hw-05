@@ -143,6 +143,7 @@ border-bottom: 1px solid #ECECEC;
 
 .nav-link {
     position: relative;
+    padding-bottom: 30px;
 
     color: var(--main-txt-cl);
 }
@@ -179,6 +180,7 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .top-nav{
+    border-bottom: 4px solid;
     color: var(--accent-cl);
 }
 
@@ -360,7 +362,8 @@ border-bottom: 1px solid #ECECEC;
 .backdrop.is-hidden{
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; 
+    
 }
 
 .backdrop{
@@ -494,9 +497,11 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .our-work-item{
+    
     position: relative;
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
+    
 }
 
 .our-work-text{
@@ -511,6 +516,8 @@ border-bottom: 1px solid #ECECEC;
     justify-content: center;
     align-items: center;
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
@@ -733,19 +740,36 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .overlay>p {
-    color: #fff;
-    padding: 10px;
+    background-color: #2196F3;
+    /* padding: 10px; */
     margin: 0;
     font-size: 18px;
+    
 }
 
 .overlay code {
     display: inline-block;
-    padding: 2px 4px;
+    /* padding: 2px 4px; */
     border-radius: 2px;
     background: rgba(33, 150, 243, 0.9);
     color: #2a2a2a;
 }
+
+.box-text{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+}
+
+
+
 /*============================*/
 /* Regular costomers */
 /*============================*/
