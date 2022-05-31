@@ -11,6 +11,9 @@
   --main-bg-cl: #ffffff;
   --secondary-bg-cl:#E5E5E5;;
   --dark-bg-cl:#2F303A;
+
+/* icon color */
+--icon-color: #AFB1B8;
 }
 
 /* grid items */
@@ -216,7 +219,7 @@ border-bottom: 1px solid #ECECEC;
 
 
 
-.titel{
+.contact-link{
     font-family: var(--secondary-txt-cl);
     font-style: normal;
     font-weight: 500;
@@ -413,7 +416,14 @@ border-bottom: 1px solid #ECECEC;
 .about-us-list{
     display: flex;
     list-style: none;
+}
 
+.about-us-item{
+    margin-right: 30px;
+}
+
+.about-us-item:last-child{
+    margin-right: 0px;
 }
 
 .about-us-icon{
@@ -436,12 +446,7 @@ border-bottom: 1px solid #ECECEC;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
-    margin-right: 30px;
     margin-top: 30px;
-}
-
-.about-us-subtitle :last-child{
-    margin-right: 0px;
 }
 
 .about-us-desc{
@@ -452,14 +457,8 @@ border-bottom: 1px solid #ECECEC;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
-    margin-right: 30px;
     margin-top: 10px;
 }
-
-.about-us-desc :last-child{
-    margin-right: 0px;
-}
-
 /*============================*/
     /* our work */
 /*============================*/
@@ -633,9 +632,7 @@ border-bottom: 1px solid #ECECEC;
     color: var(--main-txt-cl);
     border: none;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    background: #F5F4FA;
     border-radius: 4px;
 
 }
@@ -643,6 +640,10 @@ border-bottom: 1px solid #ECECEC;
 .portfolio-item:hover,
 .portfolio-item:focus{
     background-color: var(--accent-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .portfolio-item :last-child{
@@ -662,12 +663,13 @@ border-bottom: 1px solid #ECECEC;
 
 .projects-item{
     margin: 12px;
-    
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 
 .projects-item :hover,
 .projects-item :focus{
-    background: #FFFFFF;
+    
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -679,9 +681,7 @@ border-bottom: 1px solid #ECECEC;
 
 .projects-item-title{
     padding: 20px 24px 20px 24px;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
+    
 }
 
 .projects-desc{
@@ -706,7 +706,7 @@ border-bottom: 1px solid #ECECEC;
 
     letter-spacing: 0.03em;
     color:var(--secondary-txt-cl);
-    border: 1px solid #EEEEEE;
+
 }
 
 .box {
@@ -740,8 +740,8 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .overlay>p {
-    background-color: #2196F3;
-    /* padding: 10px; */
+    background-color: rgba(33, 150, 243, 0.9);
+    
     margin: 0;
     font-size: 18px;
     
@@ -749,10 +749,10 @@ border-bottom: 1px solid #ECECEC;
 
 .overlay code {
     display: inline-block;
-    /* padding: 2px 4px; */
-    border-radius: 2px;
+    
+   
     background: rgba(33, 150, 243, 0.9);
-    color: #2a2a2a;
+    
 }
 
 .box-text{
@@ -780,9 +780,6 @@ color: #FFFFFF;
 
 .clients-titel{
     box-sizing: border-box;
-    font-family:var(--main-font);
-    font-style: normal;
-    font-weight: bold;
     
     line-height: 1.17;
     
@@ -790,9 +787,11 @@ color: #FFFFFF;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     margin: 0 auto;
-    
-    width: 264px;
-    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
 }
 
 .clients-list{
@@ -802,7 +801,7 @@ color: #FFFFFF;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-   
+    margin-top: 50px;
 
 }
 
@@ -814,8 +813,6 @@ color: #FFFFFF;
     width: 170px;
     height: 92px;
     margin: 15px;
-
-    
 }
 
 .clients-item :last-child{
@@ -830,7 +827,7 @@ color: #FFFFFF;
     padding: 16px 32px;
 
     align-self: center;
-    fill: #AFB1B8;
+    color: var(--icon-color);
     fill: currentColor;
     box-sizing: border-box;
     border: 1px solid #AFB1B8;
@@ -844,7 +841,7 @@ color: #FFFFFF;
 }
 
 .client{
-    fill: #AFB1B8;
+    fill: var(--icon-color);
     fill: currentColor;
 }
 
@@ -914,13 +911,17 @@ color: #FFFFFF;
 
 }
 
-.footer-contacts {
+.footer-contact {
     display: flex;
     margin-top: 9px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+.footer-contakt {
+    margin-top: 9px;
+}
+
 /*======================*/
     /* Social icons */
 /*======================*/
@@ -946,7 +947,7 @@ color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary-txt-cl);
+    color: var(--icon-color);
     width: 44px;
     height: 44px;
 
