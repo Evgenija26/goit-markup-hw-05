@@ -144,13 +144,6 @@ border-bottom: 1px solid #ECECEC;
 
 } 
 
-.nav-link {
-    position: relative;
-    padding-bottom: 30px;
-
-    color: var(--main-txt-cl);
-}
-
 .nav-list{
     margin-right: auto;
 }
@@ -159,14 +152,17 @@ border-bottom: 1px solid #ECECEC;
 .nav-link:focus {
     /* border-bottom: 4px solid; */
     color: var(--accent-cl);
+    
 }
 
 .nav-link{
     position: relative;
-        
+    color: var(--main-txt-cl); 
+    padding-bottom: 30px;   
     cursor: pointer;
     line-height: 4px;
     text-decoration: none;
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
 } 
 
 .top-nav:after {
@@ -212,24 +208,7 @@ border-bottom: 1px solid #ECECEC;
 }
 
 
-.header-wrapper-item{
-    display: inline-block;
-    margin-left: 50px;
-}
 
-
-
-.contact-link{
-    font-family: var(--secondary-txt-cl);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    
-    color: #757575;
-
-}
 /* 
 .header-wrapper-item :last-child{
     margin-right: 0px;
@@ -251,13 +230,31 @@ border-bottom: 1px solid #ECECEC;
     margin-left: auto;
 }
 
-.contact-link{
-    fill: #757575;
+.header-wrapper-item {
+    display: inline-block;
+    margin-left: 50px;
+
+}
+
+.contact-link {
+    font-family: var(--secondary-txt-cl);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+
+    color: var(--secondary-txt-cl);
+    fill: var(--secondary-txt-cl)
+
 }
 
 .contact-link:hover,
 .contact-link:focus{
-    color:var(--accent-cl)
+    color:var(--accent-cl);
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl) cubic-bezier (0.4, 0, 0.2, 1);
 }
 
 .studio-icon {
@@ -736,9 +733,10 @@ border-bottom: 1px solid #ECECEC;
     color: var(--main-txt-cl);
     border: none;
 
-    background: #F5F4FA;
+    background: #F5F4FA ;
     border-radius: 4px;
 
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
 }
 
 .portfolio-item:hover,
@@ -749,6 +747,7 @@ border-bottom: 1px solid #ECECEC;
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    
 }
 
 .portfolio-item :last-child{
@@ -770,10 +769,12 @@ border-bottom: 1px solid #ECECEC;
     margin: 12px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+     transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
 }
 
 .projects-item :hover,
 .projects-item :focus{
+   
     
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -826,10 +827,11 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .box:hover .overlay {
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
     background: rgba(33, 150, 243, 0.9);
     transform: translatey(0);
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .overlay {
@@ -862,24 +864,24 @@ border-bottom: 1px solid #ECECEC;
     font-size: 18px;
     line-height: 1.56;
     transition: transform 250ms var(--hover-cubic);
-    color: #FFFFFF;
+    color: var(--main-bg-cl);
     letter-spacing: 0.03em;
     background-color: rgba(33, 150, 243, 0.9);
 }
 
 .box-text{
-    font-family: 'Roboto';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
-    text-align: center;
+    
     justify-content: center;
 
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: var(--main-bg-cl);
 }
 
 
@@ -927,6 +929,7 @@ border-bottom: 1px solid #ECECEC;
     width: 170px;
     height: 92px;
     margin: 15px;
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
 }
 
 .clients-item :last-child{
@@ -950,11 +953,13 @@ border-bottom: 1px solid #ECECEC;
 
 .clients-item:hover,
 .clients-item:focus{
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
     color: var(--accent-cl);
     border: 1px solid var(--accent-cl);
 }
 
 .client{
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
     fill: var(--icon-color);
     fill: currentColor;
 }
@@ -964,6 +969,7 @@ border-bottom: 1px solid #ECECEC;
 .client:hover,
 .client:focus{
     color: var(--accent-cl);
+    transition: color 250ms var(--accent-cl) background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
 }
 
 /*============================*/
@@ -1069,6 +1075,8 @@ color: #FFFFFF;
     fill: currentColor;
 
     border-radius: 50%;
+    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    
 }
 
 .socials-icon-footer{
@@ -1082,6 +1090,7 @@ color: #FFFFFF;
 .socials-link:focus {
     color: #ffffff;
     background-color: var(--accent-cl);
+    transition: color 250ms #ffffff, background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
 }
 
 
