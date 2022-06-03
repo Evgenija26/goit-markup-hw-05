@@ -162,7 +162,7 @@ border-bottom: 1px solid #ECECEC;
     cursor: pointer;
     line-height: 4px;
     text-decoration: none;
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    transition: color 250ms var(--accent-cl);
 } 
 
 .top-nav:after {
@@ -244,7 +244,7 @@ border-bottom: 1px solid #ECECEC;
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    transition: color 250ms var(--accent-cl);
 
     color: var(--secondary-txt-cl);
     fill: var(--secondary-txt-cl)
@@ -254,7 +254,6 @@ border-bottom: 1px solid #ECECEC;
 .contact-link:hover,
 .contact-link:focus{
     color:var(--accent-cl);
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl) cubic-bezier (0.4, 0, 0.2, 1);
 }
 
 .studio-icon {
@@ -736,7 +735,11 @@ border-bottom: 1px solid #ECECEC;
     background: #F5F4FA ;
     border-radius: 4px;
 
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    /* transition: color var(--accent-cl);
+    transition-duration: 250ms;
+    transition-timing-function:; */
+    transition: color 1250ms var(--accent-cl), transform, background-color 250ms var(--accent-cl), 
+    box-shadow 250ms var(--accent-cl), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
@@ -827,12 +830,13 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .box:hover .overlay {
-    transition: color 250ms var(--accent-cl), background-color 250ms var(--accent-cl), box-shadow 250ms var(--accent-cl);
+    
     background: rgba(33, 150, 243, 0.9);
     transform: translatey(0);
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.9),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+    
 
 .overlay {
     position: absolute;
@@ -848,8 +852,6 @@ border-bottom: 1px solid #ECECEC;
 
 .overlay>p {
     background-color: rgba(33, 150, 243, 0.9);
-
-
 }
 
 .overlay code {
