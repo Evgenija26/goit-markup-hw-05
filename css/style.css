@@ -173,7 +173,7 @@ border-bottom: 1px solid #ECECEC;
 
 .nav-link:hover,
 .nav-link:focus {
-    /* border-bottom: 4px solid; */
+
     color: var(--accent-cl);
     
 }
@@ -197,23 +197,19 @@ border-bottom: 1px solid #ECECEC;
 
     left: 50%;
     width: 100%;
+    height: 4px;
 
     transform: translateX(-50%);
-    background-color: var(--accent-color);
     border-radius: 2px; 
 
-            display: block;
-
-            bottom: 0;
-
-            background-color: var(--accent-cl);
+    bottom: -1px;
+    background-color: var(--accent-cl);
 
         
 }
 
 .top-nav{
     position: relative;
-    border-bottom: 4px solid;
     color: var(--accent-cl);
 }
 
